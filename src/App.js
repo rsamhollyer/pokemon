@@ -11,8 +11,8 @@ function App() {
 		<div className="App">
 			<header>
 				<h1>POKEMON!</h1>
-				<PokemonButton click={GetPokemon(pokemon, setPokemon)} />
-				<PokemonGallery />
+				<PokemonButton click={() => GetPokemon(pokemon, setPokemon)} />
+				<PokemonGallery data={pokemon} />
 			</header>
 		</div>
 	);

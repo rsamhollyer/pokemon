@@ -27,8 +27,7 @@ const GetPokemon = async (pokemon, setPokemon) => {
 
 	const pokemonData = await response.json();
 
-	console.log(pokemonData);
-	// setPokemon([...pokemon, pokemonData]);
+	setPokemon([...pokemon, ...pokemonData.results]);
 };
 
 export default GetPokemon;
